@@ -445,15 +445,8 @@
             align-items: center;
             gap: 0.4rem;
             transition: all 0.3s ease;
-            border: 1px solid var(--accent-warm);
-            padding: 0.5rem 1rem;
-            border-radius: 8px;
         }
-        .video-link:hover, .repo-link:hover { 
-            background: var(--accent-warm); 
-            color: #FFFFFF;
-            transform: translateY(-2px); 
-        }
+        .video-link:hover, .repo-link:hover { text-decoration: underline; }
 
         .tags-container { display: flex; gap: 0.5rem; flex-wrap: wrap; justify-content: flex-start; }
         .tag-pill { 
@@ -803,14 +796,17 @@
             </div>
         </section>
 
-        <!-- Projects I've Worked On Section -->
+        <!-- Projects I've Worked On Section (Correct Order: NASA Pipeline first, then Health Predictor, then Bye Bye Money Store) -->
         <section id="projects">
             <div class="section-header">
                 <h2>Projects I've Worked On</h2>
             </div>
             <div class="section-subtitle">Projects That Put the Pieces Together</div>
 
-            <!-- Project 1: Health Condition Predictor -->
+
+
+
+                         <!-- Project 01: Health Condition Predictor -->
             <div class="project-card-wrapper">
                 <div class="project-top-label">Project 01 — Health Condition Predictor</div>
                 <div class="project-card">
@@ -849,9 +845,53 @@
                 </div>
             </div>
 
-            <!-- Project 2: Bye Bye Money Store -->
+            <!-- Project 02: NASA Asteroid Data Pipeline -->
             <div class="project-card-wrapper">
-                <div class="project-top-label">Project 02 — Bye Bye Money Store</div>
+                <div class="project-top-label">Project 02 — NASA Asteroid Data Pipeline</div>
+                <div class="project-card">
+                    <div class="project-meta">
+                        <span class="project-category">Data Engineering • Cloud & API Automation</span>
+                    </div>
+                    <h3 class="project-title">Project Sentinel: NASA Asteroid Data Pipeline</h3>
+                    <p class="project-desc">An automated data pipeline that fetches near-Earth object data from NASA APIs, cleans and structures the dataset, and prepares it for analysis and monitoring.</p>
+
+                    <div class="case-study-steps">
+                        <div class="step-item">
+                            <h4>INGESTION · 01</h4>
+                            <p>Automated API retrieval of raw asteroid data from NASA endpoints.</p>
+                        </div>
+                        <div class="step-item">
+                            <h4>TRANSFORMATION · 02</h4>
+                            <p>Parsed JSON payloads, handled missing fields, and normalized structured outputs.</p>
+                        </div>
+                        <div class="step-item">
+                            <h4>STORAGE & PIPELINE · 03</h4>
+                            <p>Orchestrated automated data flow to maintain accessible data records.</p>
+                        </div>
+                    </div>
+
+                    <div class="project-footer-row">
+                        <a href="https://github.com/FARAH56109/NASA_Asteroid_Data_Pipeline.git" target="_blank" rel="noopener noreferrer" class="repo-link">
+                            <i class="fab fa-github"></i> Project Sentinel on GitHub
+                        </a>
+                        <div class="tags-container">
+                            <span class="tag-pill">Python</span>
+                            <span class="tag-pill">NASA API</span>
+                            <span class="tag-pill">Pandas</span>
+                            <span class="tag-pill">Data Pipelines</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+
+
+
+
+            <!-- Project 03: Bye Bye Money Store -->
+            <div class="project-card-wrapper">
+                <div class="project-top-label">Project 03 — Bye Bye Money Store</div>
                 <div class="project-card">
                     <div class="project-meta">
                         <span class="project-category">E-Commerce • Desktop Application</span>
@@ -883,45 +923,6 @@
                             <span class="tag-pill">JavaFX</span>
                             <span class="tag-pill">OOP</span>
                             <span class="tag-pill">UI Design</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 3: NASA Asteroid Data Pipeline -->
-            <div class="project-card-wrapper">
-                <div class="project-top-label">Project 03 — NASA Asteroid Data Pipeline</div>
-                <div class="project-card">
-                    <div class="project-meta">
-                        <span class="project-category">Data Engineering • Cloud & API Automation</span>
-                    </div>
-                    <h3 class="project-title">Project Sentinel: NASA Asteroid Data Pipeline</h3>
-                    <p class="project-desc">An automated data pipeline that fetches near-Earth object data from NASA APIs, cleans and structures the dataset, and prepares it for analysis and monitoring.</p>
-
-                    <div class="case-study-steps">
-                        <div class="step-item">
-                            <h4>INGESTION · 01</h4>
-                            <p>Automated API retrieval of raw asteroid data from NASA endpoints.</p>
-                        </div>
-                        <div class="step-item">
-                            <h4>TRANSFORMATION · 02</h4>
-                            <p>Parsed JSON payloads, handled missing fields, and normalized structured outputs.</p>
-                        </div>
-                        <div class="step-item">
-                            <h4>STORAGE & PIPELINE · 03</h4>
-                            <p>Orchestrated automated data flow to maintain accessible data records.</p>
-                        </div>
-                    </div>
-
-                    <div class="project-footer-row">
-                        <a href="https://github.com/FARAH56109/NASA_Asteroid_Data_Pipeline" target="_blank" rel="noopener noreferrer" class="repo-link">
-                            <i class="fab fa-github"></i> Project Sentinel on GitHub
-                        </a>
-                        <div class="tags-container">
-                            <span class="tag-pill">Python</span>
-                            <span class="tag-pill">NASA API</span>
-                            <span class="tag-pill">Pandas</span>
-                            <span class="tag-pill">Data Pipelines</span>
                         </div>
                     </div>
                 </div>
@@ -996,7 +997,7 @@
                 </p>
 
                 <div class="contact-channels-list">
-                    <a href="mailto:farah.abdelwahab@example.com" class="contact-channel-item">
+                    <a href="mailto:farahabdelwahab236@gmail.com" class="contact-channel-item">
                         <div class="contact-channel-left">
                             <div class="contact-channel-icon-box">
                                 <i class="fas fa-envelope"></i>
@@ -1009,7 +1010,7 @@
                         <div class="contact-channel-arrow"><i class="fas fa-arrow-right"></i></div>
                     </a>
 
-                    <a href="https://linkedin.com/in/farah-abdelwahab" target="_blank" rel="noopener noreferrer" class="contact-channel-item">
+                    <a href="https://www.linkedin.com/in/farah-abdelwahab-3a8819361/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BerIreI%2FsQdeuKV6NEN0oDA%3D%3D" target="_blank" rel="noopener noreferrer" class="contact-channel-item">
                         <div class="contact-channel-left">
                             <div class="contact-channel-icon-box">
                                 <i class="fab fa-linkedin-in"></i>
@@ -1030,6 +1031,19 @@
                             <div class="contact-channel-info">
                                 <h4>GitHub</h4>
                                 <p>Code repositories, open-source work & project demos</p>
+                            </div>
+                        </div>
+                        <div class="contact-channel-arrow"><i class="fas fa-arrow-right"></i></div>
+                    </a>
+
+                    <a href="https://wa.me/201003030412" target="_blank" rel="noopener noreferrer" class="contact-channel-item">
+                        <div class="contact-channel-left">
+                            <div class="contact-channel-icon-box">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-channel-info">
+                                <h4>WhatsApp</h4>
+                                <p>Direct instant messaging for fast communication</p>
                             </div>
                         </div>
                         <div class="contact-channel-arrow"><i class="fas fa-arrow-right"></i></div>
